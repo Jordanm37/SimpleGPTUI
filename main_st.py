@@ -14,7 +14,7 @@ def count_tokens(text):
     return len(encoding.encode(text))
 
 # Set the maximum token limit
-MAX_MEMORY_TOKENS = 100
+MAX_MEMORY_TOKENS = 1000
 
 # Set up session state for conversation history
 if "conversation_history" not in st.session_state:
