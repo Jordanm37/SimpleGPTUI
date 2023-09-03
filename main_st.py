@@ -10,11 +10,11 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # Define the function to count tokens
 def count_tokens(text):
-    encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
+    encoding = tiktoken.encoding_for_model("gpt-4")
     return len(encoding.encode(text))
 
 # Set the maximum token limit
-MAX_MEMORY_TOKENS = 1000
+MAX_MEMORY_TOKENS = 4000
 
 # Set up session state for conversation history
 if "conversation_history" not in st.session_state:
